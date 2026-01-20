@@ -1,0 +1,8 @@
+/app/config/env.php
+/public/assets/uploads/
+/storage/logs/*
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
