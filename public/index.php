@@ -1,4 +1,13 @@
 <?php
     declare(strict_types=1);
 
-    echo "School Management System Backend Initialized";
+    // Start the session
+    session_start();
+
+    // Import required files
+    require_once __DIR__ . '/../app/core/Auth.php';
+    require_once __DIR__ . '/../app/core/Router.php';
+
+    $route = $_GET['route'] ?? 'login';
+
+    Router::route($route);
